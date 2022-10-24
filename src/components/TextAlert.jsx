@@ -1,6 +1,6 @@
-import { useEffect } from "react"
+import React, { useEffect } from 'react'
 
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types'
 
 function TextAlert(props) {
   const { message, color } = props
@@ -13,7 +13,7 @@ function TextAlert(props) {
   }, [])
 
   return (
-    <span style={{ color: color, fontWeight: 'bold' }} >{message}</span>
+    <span style={ { color, fontWeight: 'bold' } }>{message}</span>
   )
 }
 
