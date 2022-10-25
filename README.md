@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="My Video Time" title="JobsCalc" src="https://user-images.githubusercontent.com/49955909/197836298-d1307158-d4af-43ee-a92b-0ce7f8ae7313.png" width="220px" />
+  <img alt="My Video Time" title="MyVideoTime" src="https://user-images.githubusercontent.com/49955909/197836298-d1307158-d4af-43ee-a92b-0ce7f8ae7313.png" width="220px" />
 </h1>
 
 <p align="center">
@@ -12,7 +12,7 @@
 <p align="center">
  <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=49AA26&labelColor=000000" alt="PRs welcome!" />
 
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=GPL&color=49AA26&labelColor=000000">
 </p>
 
 <br>
