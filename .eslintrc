@@ -23,8 +23,12 @@
     "react-hooks"
   ],
   "rules": {
+    "no-tabs": 0,
     "linebreak-style": 0,
-    "multiline-ternary": ["error", "always"],
+    "multiline-ternary": [
+      "error",
+      "always"
+    ],
     "curly": "error",
     "class-methods-use-this": 0,
     "comma-dangle": 0,
@@ -33,15 +37,33 @@
     "no-use-before-define": 0,
     "padded-blocks": 0,
     "quote-props": 0,
-    "semi": [0, "never"],
-    "template-curly-spacing": [2, "always"],
+    "semi": [
+      0,
+      "never"
+    ],
+    "template-curly-spacing": [
+      2,
+      "always"
+    ],
     "react/forbid-prop-types": 0,
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": 0,
-    "react/jsx-curly-spacing": [2, "always"],
+    "react/jsx-curly-spacing": [
+      2,
+      "always"
+    ],
     "react/jsx-filename-extension": 0,
     "react/no-unused-prop-types": 0,
-    "react/prop-types": [1, { "ignore": ["value", "original", "item"] }],
+    "react/prop-types": [
+      1,
+      {
+        "ignore": [
+          "value",
+          "original",
+          "item"
+        ]
+      }
+    ],
     "import/prefer-default-export": 0,
     "import/first": 0,
     "react/no-array-index-key": 0,
@@ -57,16 +79,25 @@
           "/^react/",
           "module",
           "/^@/",
-          ["parent", "sibling", "index"],
+          [
+            "parent",
+            "sibling",
+            "index"
+          ],
           "/^./styles/"
         ],
-        "alphabetize": { "order": "asc", "ignoreCase": true }
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
       }
     ]
   },
   "overrides": [
     {
-      "files": ["**/*.tsx"],
+      "files": [
+        "**/*.tsx"
+      ],
       "rules": {
         "react/prop-types": 0
       }
