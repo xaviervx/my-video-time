@@ -22,7 +22,7 @@ export const ContentHeader = styled.header`
   width: 100vw;
   height: 400px;
 
-  background-color: #9D9BFF;
+  background: var(--blue);
 
   align-items: center;
   justify-content: center;

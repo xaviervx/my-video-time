@@ -19,6 +19,7 @@ export const ContentImg = styled.img`
   height: 14rem;
   width: 14rem;
   border-radius: 50%;
+  object-fit: cover;
 `;
 
 export const ContentHeading = styled.div`
