@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  body {
+    @apply bg-gray-100 antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6, strong {
+    @apply font-semibold;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  [disabled] {
+    @apply opacity-60 cursor-not-allowed;
+  }
+}

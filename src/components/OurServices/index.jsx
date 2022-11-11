@@ -2,8 +2,6 @@ import React from 'react';
 
 import ProptTypes from 'prop-types';
 
-import * as S from './styles';
-
 export function OurServices(props) {
   const {
     title,
@@ -11,23 +9,23 @@ export function OurServices(props) {
   } = props;
 
   return (
-    <S.Container>
-      <S.ContentMain>
+    <div className="flex items-center justify-center">
+      <div className="flex-row items-center justify-center">
         {
-          imageSrc && <S.ContentImg src={ imageSrc } />
+          imageSrc
+          && <img className="flex h-56 w-56 rounded-full object-cover" src={ imageSrc } alt="OurServices" />
         }
-
-        <S.ContentHeading>
-          <S.Heading>
+        <div className="items-center justify-center text-center">
+          <h3 className="text-2xl">
             {title}
-          </S.Heading>
-        </S.ContentHeading>
-      </S.ContentMain>
-    </S.Container>
+          </h3>
+        </div>
+      </div>
+    </div>
   );
 }
 
-OurServices.proptTypes = {
+OurServices.propTypes = {
   title: ProptTypes.string.isRequired,
   imageSrc: ProptTypes.string.isRequired,
 }
