@@ -18,7 +18,7 @@
 <br>
 
 <div align="center">
-  <img alt="Preview Desktop" src="https://user-images.githubusercontent.com/49955909/197837343-f9503099-4bbf-411e-98d1-aca609d558e8.png">
+  <img alt="Preview Desktop" src="https://user-images.githubusercontent.com/49955909/201435475-5e0f06bb-7151-4061-bb45-35ab9a613d5d.png">
 </div>
 
 ## 🚀 Tecnologias
