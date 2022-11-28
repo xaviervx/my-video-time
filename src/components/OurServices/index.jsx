@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ProptTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 export function OurServices(props) {
   const {
@@ -26,6 +26,6 @@ export function OurServices(props) {
 }
 
 OurServices.propTypes = {
-  title: ProptTypes.string.isRequired,
-  imageSrc: ProptTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  imageSrc: PropTypes.string.isRequired,
 }

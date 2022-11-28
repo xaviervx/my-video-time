@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         sans: ['Poppins', ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        footer: '#1d1d1d'
+      }
     },
   },
   plugins: [],
