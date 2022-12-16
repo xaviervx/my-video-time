@@ -1,19 +1,14 @@
 import React from 'react';
 
 import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 import { Highlights } from '../../components/Highlights';
 import { OurServices } from '../../components/OurServices';
 
 function Home() {
   return (
     <div className="items-center justify-center">
-      <header className="w-full h-96 p-14 bg-violet-400 items-center justify-center">
-        <div className="flex gap-4">
-          <img src="logo-part1.png" alt="Play Button" />
-          <img src="logo-part2.png" alt="My Video Time" />
-        </div>
-        <img className="absolute h-auto w-[160px] top-0 ml-80 mt-24" src="img-woman-header.png" alt="Woman with her cellphone" />
-      </header>
+      <Header />
 
       <main>
         <div className="max-w-7xl m-auto">

@@ -22,4 +22,18 @@
   [disabled] {
     @apply opacity-60 cursor-not-allowed;
   }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #666666;
+    border-radius: 20px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #DDDDDD;
+    border-radius: 20px;
+  }
 }

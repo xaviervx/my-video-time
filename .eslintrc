@@ -60,6 +60,7 @@
     "react/jsx-no-bind": 0,
     "no-plusplus": "off",
     "import/no-extraneous-dependencies": 0,
+    "jsx-a11y/click-events-have-key-events": "off",
     "import-helpers/order-imports": [
       "warn",
       {
