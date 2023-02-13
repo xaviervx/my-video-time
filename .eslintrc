@@ -92,5 +92,8 @@
         "react/prop-types": 0
       }
     }
-  ]
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  }
 }
