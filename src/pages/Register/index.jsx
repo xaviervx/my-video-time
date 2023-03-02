@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { useForm, Controller } from 'react-hook-form';
+import { Controller, useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 
 import {
-  X, EnvelopeSimple, User, Phone, GenderIntersex, Buildings, Camera, MapPinLine, MapTrifold
+  Buildings, Camera, EnvelopeSimple, GenderIntersex, MapPinLine, MapTrifold, Phone, User, X
 } from 'phosphor-react';
 
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -151,7 +151,7 @@ export default function Register() {
             <div>
               <div className="flex items-center justify-center">
                 <div type="file" className="relative rounded-full border-2 border-[#0004] flex items-center justify-center h-[120px] w-[120px] mb-3 cursor-pointer overflow-hidden">
-                  <input type="file" onChange={ (e) => encodeImageFileAsURL(e) } className="w-full h-full z-10 opacity-[0%] cursor-pointer" />
+                  <input data-testid="input-upload-image" type="file" onChange={ (e) => encodeImageFileAsURL(e) } className="w-full h-full z-10 opacity-[0%] cursor-pointer" />
                   {!userImage
                     ? (
                       <Camera size={ 50 } className="absolute z-0 cursor-pointer opacity-[25%]" />

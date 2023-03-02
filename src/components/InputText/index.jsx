@@ -2,23 +2,21 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-export function InputText({
+export const InputText = React.forwardRef(({
   width, height, margimTop, margimBottom, placeholder, icon, type, onChange
-}) {
-  return (
-    <div className={ `relative ${ width } ${ height } ${ margimTop } ${ margimBottom } border-b border-[#707070]` }>
-      <button type="button" className="absolute h-auto w-auto mt-1 z-10 cursor-none">
-        {icon}
-      </button>
-      <input
-        placeholder={ placeholder }
-        type={ type }
-        onChange={ onChange }
-        className="relative w-full h-full pl-8 bg-transparent :placeholder:text-[#00000] placeholder:opacity-[35%] text-[15px] outline-none"
-      />
-    </div>
-  )
-}
+}, ref) => (
+  <div ref={ ref } className={ `relative ${ width } ${ height } ${ margimTop } ${ margimBottom } border-b border-[#707070]` }>
+    <button type="button" className="absolute h-auto w-auto mt-1 z-10 cursor-none">
+      {icon}
+    </button>
+    <input
+      placeholder={ placeholder }
+      type={ type }
+      onChange={ onChange }
+      className="relative w-full h-full pl-8 bg-transparent :placeholder:text-[#00000] placeholder:opacity-[35%] text-[15px] outline-none"
+    />
+  </div>
+));
 
 InputText.propTypes = {
   height: PropTypes.string,
@@ -27,8 +25,8 @@ InputText.propTypes = {
   margimBottom: PropTypes.string,
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
+  type: PropTypes.string,
   icon: PropTypes.element.isRequired,
-  type: PropTypes.string.isRequired,
 }
 
 InputText.defaultProps = {
@@ -38,4 +36,5 @@ InputText.defaultProps = {
   margimBottom: '',
   onChange: () => {},
   placeholder: 'Nome',
+  type: 'text',
 }

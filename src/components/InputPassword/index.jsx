@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Lock, LockOpen } from 'phosphor-react';
 import PropTypes from 'prop-types';
 
-export function InputPassword({
+export const InputPassword = React.forwardRef(({
   width,
   height,
   margimBottom,
@@ -12,7 +12,7 @@ export function InputPassword({
   onChange,
   id,
   name,
-}) {
+}, ref) => {
   const [showPassword, setShowPassword] = useState(false);
   const type = showPassword
     ? 'text'
@@ -24,6 +24,7 @@ export function InputPassword({
 
   return (
     <div
+      ref={ ref }
       className={ `relative ${ width } ${ height } ${ margimTop } ${ margimBottom } border-b border-[#707070]` }
     >
       <button
@@ -45,7 +46,7 @@ export function InputPassword({
       />
     </div>
   );
-}
+});
 
 InputPassword.propTypes = {
   height: PropTypes.string,
@@ -54,7 +55,7 @@ InputPassword.propTypes = {
   margimBottom: PropTypes.string,
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
   name: PropTypes.string.isRequired,
 };
 
@@ -65,4 +66,5 @@ InputPassword.defaultProps = {
   margimBottom: '',
   onChange: () => {},
   placeholder: 'Nome',
+  id: undefined,
 };
