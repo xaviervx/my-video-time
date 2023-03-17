@@ -11,18 +11,20 @@ export function Highlights(props) {
     imgSrc,
     ratingStarNumber,
     pricePerHour,
-    countRatingPeople
+    countRatingPeople,
+    alt,
+    key
   } = props;
 
   return (
-    <div className=" flex items-center justify-center">
+    <div className=" flex items-center justify-center" key={ key }>
       <div className="flex-row items-center justify-center">
         {
           imgSrc && (
           <img
             className="flex h-48 w-full object-cover rounded-2xl"
             src={ imgSrc }
-            alt="Hightlight"
+            alt={ alt }
           />
           )
         }
@@ -59,6 +61,8 @@ Highlights.propTypes = {
   pricePerHour: PropTypes.number.isRequired,
   countRatingPeople: PropTypes.number,
   ratingStarNumber: PropTypes.number,
+  alt: PropTypes.string.isRequired,
+  key: PropTypes.string.isRequired,
 }
 
 Highlights.defaultProps = {

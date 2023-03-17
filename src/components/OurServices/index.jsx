@@ -6,14 +6,16 @@ export function OurServices(props) {
   const {
     title,
     imageSrc,
+    alt,
+    key,
   } = props;
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center" key={ key }>
       <div className="flex-row items-center justify-center">
         {
           imageSrc
-          && <img className="flex h-56 w-56 rounded-full object-cover" src={ imageSrc } alt="OurServices" />
+          && <img className="flex h-56 w-56 rounded-full object-cover" src={ imageSrc } alt={ alt } />
         }
         <div className="items-center justify-center text-center">
           <h3 className="text-2xl">
@@ -28,4 +30,6 @@ export function OurServices(props) {
 OurServices.propTypes = {
   title: PropTypes.string.isRequired,
   imageSrc: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  key: PropTypes.string.isRequired,
 }

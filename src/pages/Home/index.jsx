@@ -3,9 +3,15 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import { Highlights } from '../../components/Highlights';
+import { Loading } from '../../components/Loading';
 import { OurServices } from '../../components/OurServices';
+import useCoursesData from '../../hook/useCoursesData';
+import useServicesData from '../../hook/useServicesData';
 
 function Home() {
+  const { isLoading: servicesLoading, data: servicesData } = useServicesData();
+  const { courses, isLoading } = useCoursesData();
+
   return (
     <div className="items-center justify-center">
       <Header />
@@ -17,11 +23,15 @@ function Home() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-            <OurServices title="Cursos" imageSrc="cursos.png" />
-            <OurServices title="Professores" imageSrc="teachers.png " />
-            <OurServices title="Idiomas" imageSrc="idiomas.png" />
-            <OurServices title="Consultorias" imageSrc="consultorias.png" />
-            <OurServices title="Consultas" imageSrc="consultas.png" />
+            {servicesLoading && <Loading />}
+            {servicesData.map((service) => (
+              <OurServices
+                key={ service.id }
+                title={ service.title }
+                imageSrc={ service.imageUrl }
+                alt={ service.title }
+              />
+            ))}
           </div>
         </div>
 
@@ -30,10 +40,19 @@ function Home() {
             Em destaque
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <Highlights title="Cursos do João" subtitle="João" ratingStarNumber={ 3 } countRatingPeople={ 300 } pricePerHour={ 20 } imgSrc="eua.png" />
-            <Highlights title="Cursos da Marlene" subtitle="Marlene" ratingStarNumber={ 2 } countRatingPeople={ 20 } pricePerHour={ 20.5 } imgSrc="eua.png" />
-            <Highlights title="Cursos da Ana" subtitle="Ana" ratingStarNumber={ 1 } countRatingPeople={ 100 } pricePerHour={ 50 } imgSrc="eua.png" />
-            <Highlights title="Cursos do José" subtitle="José" ratingStarNumber={ 5 } countRatingPeople={ 1000 } pricePerHour={ 1.99 } imgSrc="eua.png" />
+            {isLoading && <Loading />}
+            {courses.map((course) => (
+              <Highlights
+                key={ course.id }
+                title={ course.title }
+                subtitle={ course.author }
+                ratingStarNumber={ course.stars }
+                countRatingPeople={ course.avaliations }
+                pricePerHour={ course.price }
+                imgSrc={ course.imageUrl }
+                alt={ course.title }
+              />
+            ))}
           </div>
         </div>
       </main>

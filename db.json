@@ -1,0 +1,67 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Fundamentos de Banco de dados",
+      "author": "Rafael",
+      "price": 30.00,
+      "avaliations": 100,
+      "stars": 5,
+      "imageUrl": "https://blog.unipar.br/wp-content/uploads/2021/11/post_thumbnail-801c53f03508c73882d8a372d4df2e17.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "Gestão Financeira",
+      "author": "Xavier",
+      "price": 24.50,
+      "avaliations": 250,
+      "stars": 4,
+      "imageUrl": "https://www.gov.br/infraestrutura/pt-br/assuntos/portal-da-estrategia/cursos-e-eventos-estrategia/gestao-do-orcamento-publico/oramento-jpg/@@images/ef1a921e-fe50-417e-8982-ae8c1d0b0f4a.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "Curso de Inglês",
+      "author": "Fulano",
+      "price": 19.50,
+      "avaliations": 550,
+      "stars": 4.5,
+      "imageUrl": "https://img.freepik.com/vetores-gratis/voce-fala-ingles-letras-de-fundo_23-2147871113.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Fundamentos de Inteligência Artificial",
+      "author": "Lucas",
+      "price": 22.50,
+      "avaliations": "70",
+      "stars": 3.5,
+      "imageUrl": "https://cdn.evg.gov.br/cursos/377_EVG/imagem_curso_377.png"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "title": "Cursos",
+      "imageUrl": "https://www.btu.unesp.br/Home/sobre/biblioteca/biblioensina356/IMAGEM%20-%20Curso%20EAD%20banner%20-%20Pl%C3%A1gio%20e%20Turnitin.png"
+    },
+    {
+      "id": 2,
+      "title": "Professores",
+      "imageUrl": "https://www.paldesk.com/wp-content/uploads/2021/03/An-Introduction-to-People-Management.png"
+    },
+    {
+      "id": 3,
+      "title": "Idiomas",
+      "imageUrl": "https://www.meistertask.com/blog/wp-content/uploads/2016/11/FOCUS-6-Tips-for-Effective-Team-Management-796x398.png"
+    },
+    {
+      "id": 4,
+      "title": "Consultorias",
+      "imageUrl": "https://dagens-erhvervsnyt.dk/wp-content/uploads/2020/10/teamsammensaetning.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Consultas",
+      "imageUrl": "https://startupsmagazine.co.uk/sites/default/files/2020-11/AdobeStock_291895827ed.jpg"
+    }
+  ]
+}
