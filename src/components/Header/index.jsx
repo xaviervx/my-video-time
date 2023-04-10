@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-import { List } from 'phosphor-react';
+import { List, SignOut } from 'phosphor-react';
 
+import { useUser } from '../../hook/contexts/useUser';
 import MenuDropdown from '../MenuDropdown';
 
 function Header() {
   const [search, setSearch] = useState('')
+
+  const { name, logout } = useUser()
+
+  const navigate = useNavigate()
 
   return (
     <header className="flex w-full h-[550px] p-14 pb-0 bg-violet-400 overflow-hidden relative">
@@ -30,10 +36,19 @@ function Header() {
           />
         </div>
         <div className="flex gap-4">
-          <p className="text-white opacity-90">
-            Torne-se um
-            <br />
-            professor
+          <p className="text-white opacity-90 flex justify-center items-center leading-tight max-w-[150px]">
+            {
+              !name
+                ? (
+                  <>
+                    Torne-se um
+                    <br />
+                    professor
+                  </>
+                )
+                : name
+            }
+
           </p>
           <div className="flex justify-between items-center px-1 gap-1 min-w-max h-[50px] bg-white rounded-full">
             {/* <div className="p-2">
@@ -48,12 +63,20 @@ function Header() {
                 label: 'Meu perfil',
                 icon: <List size={ 24 } className="h-6 w-6" />,
                 onClickAction: () => {}
-              }
+              },
+              {
+                label: 'Sair',
+                icon: <SignOut size={ 24 } className="h-6 w-6" />,
+                onClickAction: () => {
+                  logout()
+                  navigate('/login')
+                }
+              },
             ] }
             />
 
             <img
-              className="rounded-full w-11 h-11 object-cove"
+              className="rounded-full w-11 h-11 object-cover"
               src="consultas.png"
               alt="avatar"
             />

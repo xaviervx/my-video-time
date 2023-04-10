@@ -54,7 +54,6 @@ export default function Register() {
                     width="w-80"
                     placeholder="Nome completo"
                     margimBottom="mb-3"
-                    valu
                     icon={ <User size={ 21 } className="opacity-[35%]" /> }
                     // eslint-disable-next-line react/jsx-props-no-spreading
                     { ...field }

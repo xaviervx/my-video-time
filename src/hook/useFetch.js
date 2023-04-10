@@ -27,7 +27,7 @@ const useFetch = (
         } finally {
           setLoading(false);
         }
-      }, 3000)
+      }, 0)
     };
 
     fetchData().then((r) => r);

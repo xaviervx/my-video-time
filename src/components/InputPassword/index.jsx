@@ -31,6 +31,7 @@ export const InputPassword = React.forwardRef(({
         type="button"
         onClick={ () => handleShowPassword() }
         className="absolute h-auto w-auto mt-1 z-10 cursor-pointer"
+        tabIndex={ -1 }
       >
         {showPassword
           ? <LockOpen size={ 21 } className="opacity-[35%]" />

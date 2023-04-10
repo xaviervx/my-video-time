@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { EnvelopeSimple, X } from 'phosphor-react';
 
 import { InputPassword } from '../../components/InputPassword';
 import { InputText } from '../../components/InputText';
+import { useUser } from '../../hook/contexts/useUser';
 
 export default function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+
+  const navigate = useNavigate()
+
+  const { singIn } = useUser()
 
   function handleSetEmail(event) {
     setEmail(event.target.value)
@@ -23,6 +29,12 @@ export default function Login() {
   }
 
   console.log(myForm)
+
+  function login() {
+    singIn({ userName: email })
+
+    navigate('/')
+  }
 
   return (
     <div className="flex items-center justify-center h-screen w-screen bg-[#383939]">
@@ -52,7 +64,8 @@ export default function Login() {
         />
         <button
           className="w-80 h-9 mb-6 bg-[#5599fe] rounded-full text-center text-[20px] text-white"
-          type="submit"
+          type="button"
+          onClick={ () => login() }
         >
           Entrar
         </button>

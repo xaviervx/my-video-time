@@ -34,6 +34,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Em construção... 🔨
 
+Para rodar a API fake rode o comando:
+npx json-server --watch db.json
+
 ## 🔖 Layout
 
 Você pode visualizar o layout do projeto através [desse link](https://xd.adobe.com/view/3dc2368e-ad87-4ec0-afd8-029528cc34d2-6891/screen/f14548d8-8096-4a1a-aa69-730d4f561663/).

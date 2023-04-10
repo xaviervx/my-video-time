@@ -6,7 +6,7 @@ export const InputText = React.forwardRef(({
   width, height, margimTop, margimBottom, placeholder, icon, type, onChange
 }, ref) => (
   <div ref={ ref } className={ `relative ${ width } ${ height } ${ margimTop } ${ margimBottom } border-b border-[#707070]` }>
-    <button type="button" className="absolute h-auto w-auto mt-1 z-10 cursor-none">
+    <button type="button" className="absolute h-auto w-auto mt-1 z-10 cursor-none" tabIndex={ -1 }>
       {icon}
     </button>
     <input
