@@ -2,12 +2,15 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-function StarRating({ ratingStarNumber, countRatingPeople }) {
+function StarRating({ ratingStarNumber, countRatingPeople, justifyLeft }) {
   const styleActive = 'w-5 h-5 text-yellow-400';
   const styleInactive = 'w-5 h-5 text-gray-300 dark:text-gray-500';
 
   return (
-    <div className="flex items-center justify-center">
+    <div className={ `flex items-center ${ justifyLeft
+      ? 'justify-left'
+      : 'justify-center' }` }
+    >
       <svg
         aria-hidden="true"
         className={ ratingStarNumber >= 1
@@ -75,7 +78,12 @@ function StarRating({ ratingStarNumber, countRatingPeople }) {
 
 StarRating.propTypes = {
   ratingStarNumber: PropTypes.number.isRequired,
-  countRatingPeople: PropTypes.number.isRequired
+  countRatingPeople: PropTypes.number.isRequired,
+  justifyLeft: PropTypes.bool
+}
+
+StarRating.defaultProps = {
+  justifyLeft: false
 }
 
 export default StarRating

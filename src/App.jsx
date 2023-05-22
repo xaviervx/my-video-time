@@ -8,6 +8,7 @@ import { useUser } from './hook/contexts/useUser'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import Course from './pages/Course'
 
 import './styles/main.css'
 
@@ -21,6 +22,8 @@ function App() {
           <Route path="/login" element={ <Login /> } />
 
           <Route path="/register" element={ <Register /> } />
+
+          <Route path="/course/:id" element={ <Course /> } />
         </Routes>
       </Router>
     </UserContextProvider>

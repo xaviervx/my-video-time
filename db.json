@@ -7,7 +7,8 @@
       "price": 30.00,
       "avaliations": 100,
       "stars": 5,
-      "imageUrl": "https://blog.unipar.br/wp-content/uploads/2021/11/post_thumbnail-801c53f03508c73882d8a372d4df2e17.jpeg"
+      "imageUrl": "https://blog.unipar.br/wp-content/uploads/2021/11/post_thumbnail-801c53f03508c73882d8a372d4df2e17.jpeg",
+      "description": "Mussum Ipsum, cacilds vidis litro abertis. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget.Atirei o pau no gatis, per gatis num morreus.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Cevadis im ampola pa arma uma pindureta. Leite de capivaris, leite de mula manquis sem cabeça.Casamentiss faiz malandris se pirulitá.Paisis, filhis, espiritis santis.Admodum accumsan disputationi eu sit. Vide electram sadipscing et per."
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "price": 24.50,
       "avaliations": 250,
       "stars": 4,
-      "imageUrl": "https://www.gov.br/infraestrutura/pt-br/assuntos/portal-da-estrategia/cursos-e-eventos-estrategia/gestao-do-orcamento-publico/oramento-jpg/@@images/ef1a921e-fe50-417e-8982-ae8c1d0b0f4a.jpeg"
+      "imageUrl": "https://www.gov.br/infraestrutura/pt-br/assuntos/portal-da-estrategia/cursos-e-eventos-estrategia/gestao-do-orcamento-publico/oramento-jpg/@@images/ef1a921e-fe50-417e-8982-ae8c1d0b0f4a.jpeg",
+      "description": "Mussum Ipsum, cacilds vidis litro abertis. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget.Atirei o pau no gatis, per gatis num morreus.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Cevadis im ampola pa arma uma pindureta. Leite de capivaris, leite de mula manquis sem cabeça.Casamentiss faiz malandris se pirulitá.Paisis, filhis, espiritis santis.Admodum accumsan disputationi eu sit. Vide electram sadipscing et per."
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "price": 19.50,
       "avaliations": 550,
       "stars": 4.5,
-      "imageUrl": "https://img.freepik.com/vetores-gratis/voce-fala-ingles-letras-de-fundo_23-2147871113.jpg"
+      "imageUrl": "https://img.freepik.com/vetores-gratis/voce-fala-ingles-letras-de-fundo_23-2147871113.jpg",
+      "description": "Mussum Ipsum, cacilds vidis litro abertis. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget.Atirei o pau no gatis, per gatis num morreus.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Cevadis im ampola pa arma uma pindureta. Leite de capivaris, leite de mula manquis sem cabeça.Casamentiss faiz malandris se pirulitá.Paisis, filhis, espiritis santis.Admodum accumsan disputationi eu sit. Vide electram sadipscing et per."
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "price": 22.50,
       "avaliations": "70",
       "stars": 3.5,
-      "imageUrl": "https://cdn.evg.gov.br/cursos/377_EVG/imagem_curso_377.png"
+      "imageUrl": "https://cdn.evg.gov.br/cursos/377_EVG/imagem_curso_377.png",
+      "description": "Mussum Ipsum, cacilds vidis litro abertis. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget.Atirei o pau no gatis, per gatis num morreus.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Cevadis im ampola pa arma uma pindureta. Leite de capivaris, leite de mula manquis sem cabeça.Casamentiss faiz malandris se pirulitá.Paisis, filhis, espiritis santis.Admodum accumsan disputationi eu sit. Vide electram sadipscing et per."
     }
   ],
   "services": [
