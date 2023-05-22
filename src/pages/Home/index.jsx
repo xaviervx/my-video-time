@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
@@ -43,16 +43,18 @@ function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {isLoading && <Loading />}
             {courses.map((course) => (
-              <Highlights
-                key={ course.id }
-                title={ course.title }
-                subtitle={ course.author }
-                ratingStarNumber={ course.stars }
-                countRatingPeople={ course.avaliations }
-                pricePerHour={ course.price }
-                imgSrc={ course.imageUrl }
-                alt={ course.title }
-              />
+              <NavLink to={ `course/${ course.id }` }>
+                <Highlights
+                  key={ course.id }
+                  title={ course.title }
+                  subtitle={ course.author }
+                  ratingStarNumber={ course.stars }
+                  countRatingPeople={ course.avaliations }
+                  pricePerHour={ course.price }
+                  imgSrc={ course.imageUrl }
+                  alt={ course.title }
+                />
+              </NavLink>
             ))}
           </div>
         </div>
