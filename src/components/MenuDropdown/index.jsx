@@ -16,6 +16,7 @@ function MenuDropdown(props) {
         className={ `flex rounded-full p-2 max-w-max cursor-pointer shadow-2xl items-center ${ buttonMenuIconClassName }` }
         onClick={ () => setOpen((prevState) => !prevState) }
         type="button"
+        data-testid="button-hamburger"
       >
         {menuIcon}
         {/* <FontAwesomeIcon icon={ menuIcon.icon } className={ `w-7 h-7 ${ menuIcon.classes }` } /> */}
@@ -23,9 +24,11 @@ function MenuDropdown(props) {
           <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg> */}
       </button>
-      <div className={ `mt-1 bg-white rounded-sm shadow-md min-w-[10rem] ${ open
-        ? 'absolute'
-        : 'hidden' } ` }
+      <div
+        data-testid="nav-container"
+        className={ `mt-1 bg-white rounded-sm shadow-md min-w-[10rem] ${ open
+          ? 'absolute'
+          : 'hidden' } ` }
       >
         <ul className="flex flex-col gap-1 p-1 z-40">
           {menuItens.map(({ label, icon, onClickAction }, index) => (
